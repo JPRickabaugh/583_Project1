@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald|Source+Sans+Pro:300,300i');
+
+.headertext{
+    font-family: 'Oswald', sans-serif;
+    margin: 0;
+    font-style: italic;
+}
+
+.bodytext{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 300;
+    margin: 0;
+}
+
+html, body{
+    margin: 0;
+    padding: 0;
+    width: 100%; /* for some reason, 100vw results in a sideways scroll bar. So i used 100% instead, as it doesn't create that aesthetic blemish */
+}
+.panel {
+    height: 100vh;
+}
+.blue {
+    background-color: blue;
+}
+.green {
+    background-color: green;
+}
+.pink {
+    background-color: pink;
+}
+.yellow {
+    background-color: yellow;
+} 
+
+/* "Who are the avengers" section start*/
+
+#panel2{
+    display: grid;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 15% 10% 60%;
+    grid-template-areas: 
+        "hdrp2 hdrp2 hdrp2 hdrp2 hdrp2"
+        "biop2 biop2 enmhp2 enmhp2 enmhp2"
+        "biop2 biop2 enm1p2 enm2p2 enm3p2"
+}
+
+#panel2 > div{
+    border: 1px solid black;
+
+}
+
+#hdrp2{
+    background-color: black;
+    grid-area: hdrp2;
+    font-size: 30px;
+    color: white;
+}
+
+#biop2{
+    background-color: black;
+    grid-area: biop2;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+#biop2 > h2 {
+    width: 90%;
+    margin-left: 5%;
+    text-align: center;    
+}
+
+#biop2 > p {
+    width: 90%;
+    margin-left: 5%;
+}
+
+#biop2 > img {
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 1vh;
+}
+
+#enmhp2{
+    grid-area: enmhp2;
+}
+
+#enm1p2, #enm2p2, #enm3p2{
+    
+}
+
+/* "Who are the avengers" section end*/
