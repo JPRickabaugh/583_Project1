@@ -1,4 +1,4 @@
-//code below based on sample code from scrollmagic site
+//code below based on sample code from scrollmagic site http://scrollmagic.io/examples/basic/section_wipes_natural.html
 $(function () { // wait for document ready
         //init
         var controller = new ScrollMagic.Controller({
@@ -19,7 +19,7 @@ $(function () { // wait for document ready
             .addTo(controller);
         }
 
-        //reworked chart code from chart js tutorial
+        //reworked chart code from chart js tutorial https://www.chartjs.org/docs/latest/getting-started/
         var ctx = document.getElementById("myChart").getContext('2d');
         var myChart = new Chart(ctx, {
             type: 'horizontalBar',
