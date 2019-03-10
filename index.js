@@ -13,11 +13,23 @@ var app = express();
 app.use(express.static('public'));
 
 // http://expressjs.com/en/starter/basic-routing.html
-app.get("/", function (request, response) {
-  response.send('Hello' + process.env.APIKEY);
+//app.get("/", function (request, response) {
+  //response.send('Hello' + process.env.APIKEY);
+//});
+app.get('/', function(request, response) {
+  response.sendFile(__dirname + '/views/index.html');
 });
 
-
+//-------------------------------------------------------------//
+//------------------------ MARVEL API -------------------------//
+//-------------------------------------------------------------//
+//source for following 5 lines of code: https://www.npmjs.com/package/marvel-api
+var api = require('marvel-api');
+ 
+var marvel = api.createClient({
+  publicKey: 'my-public-key', 
+  privateKey: 'my-private-key'
+});
 
 
 

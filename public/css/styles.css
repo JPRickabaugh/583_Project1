@@ -20,9 +20,6 @@ html, body{
 .panel {
     height: 100vh;
 }
-.pink {
-    background-color: pink;
-}
 
 /* logo/intro section START */
 
@@ -56,7 +53,7 @@ path {
         opacity: 10;
         fill: none;
     }
-    90% {
+    80% {
         fill: rgba(255,255,255,0);
     }
     100%{
@@ -70,7 +67,7 @@ path {
     font-size: 10vh;
     text-align: center;
     color: white;
-    animation: fadein 3s cubic-bezier(1,.01,.58,1);
+    animation: fadein 2s cubic-bezier(1,.01,.58,1);
 }
 
 @-webkit-keyframes fadein {
@@ -81,7 +78,7 @@ path {
 #downarrow{  
     width: 10%;
     margin-left: 45%;
-    animation: fadein 3s cubic-bezier(1,.01,.58,1);
+    animation: fadein 2s cubic-bezier(1,.01,.58,1);
 }
 
 @-webkit-keyframes fadein {
@@ -108,7 +105,7 @@ path {
 }
 
 #panel2 > div{
-    background-color: #1B1B1B;
+    background-color:#2E2E2E;
 }
 
 /* main header */
@@ -196,6 +193,26 @@ path {
 
 /* "Who are the avengers" section END*/
 
+/* chart section START */
+
+#panel3{
+    background-color: black;
+    height: 100vh;
+    color: white;
+    text-align: center;s
+}
+
+#chartheader{
+    font-size: 10vh;
+}
+
+#myChart{
+    height: 80vh !important;
+    width: 100%;
+}
+
+/* chart section END */
+
 /* "notable avengers" section START */
 
 #panel4{
@@ -214,7 +231,7 @@ path {
 }
 
 #panel4 > div{
-    background-color: #1B1B1B;
+    background-color: #2E2E2E;
 }
 
 /*header*/
