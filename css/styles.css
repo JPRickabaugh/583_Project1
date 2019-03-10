@@ -50,14 +50,12 @@ html, body{
 }
 
 #panel2 > div{
-    border: 1px solid black;
-
+    background-color: #1B1B1B;
 }
 
 /* main header */
 
 #hdrp2{
-    background-color: black;
     grid-area: hdrp2;
     font-size: 6vh;
     color: white;
@@ -67,7 +65,6 @@ html, body{
 /* bio */
 
 #biop2{
-    background-color: black;
     grid-area: biop2;
     color: white;
     display: flex;
@@ -91,7 +88,6 @@ html, body{
     color: white;
     text-align: center;
     font-size: 4vh;
-    background-color: black;
 }
 
 /* all enemy sections */
@@ -101,7 +97,6 @@ html, body{
     flex-direction: column;
     text-align: center;
     color: white;
-    background-color: black;
 }
 
 /*enemy 1*/
@@ -142,3 +137,143 @@ html, body{
 }
 
 /* "Who are the avengers" section END*/
+
+/* "notable avengers" section START */
+
+#panel4{
+    display: grid;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 10% 10% 40% 40%;
+    grid-template-areas: 
+        "hdrp4 hdrp4 hdrp4 hdrp4 hdrp4 hdrp4"
+        "hn1p4 hn2p4 hn3p4 hn4p4 hn5p4 hn6p4"
+        "hi1p4 hi2p4 hi3p4 hi4p4 hi5p4 hi6p4"
+        "hd1p4 hd2p4 hd3p4 hd4p4 hd5p4 hd6p4"
+}
+
+#panel4 > div{
+    border: 1px solid black;
+    background-color: #1B1B1B;
+}
+
+/*header*/
+
+#hdrp4{
+    grid-area: hdrp4;
+    font-size: 4.5vh;
+    color: white;
+    text-align: center;
+}
+
+/*hero names*/
+
+#hn1p4, #hn2p4, #hn3p4, #hn4p4, #hn5p4, #hn6p4 {
+    text-align: center;
+    color: white;
+    font-size: 3vh;
+}
+
+.heroname {
+    margin-top: 2vh;
+}
+
+#hn1p4{
+    grid-area: hn1p4;
+}
+#hn2p4{
+    grid-area: hn2p4;
+}
+#hn3p4{
+    grid-area: hn3p4;
+}
+#hn4p4{
+    grid-area: hn4p4;
+}
+#hn5p4{
+    grid-area: hn5p4;
+}
+#hn6p4{
+    grid-area: hn6p4;
+}
+
+/*hero images*/
+
+.heroimg{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 36vh;
+    margin-top: 1vh;
+    filter: grayscale(100%);
+    transition: .75s;    
+}
+
+.heroimg:hover{
+    filter: grayscale(0%);
+    transition: .75s;
+}
+
+#hi1p4{
+    grid-area: hi1p4;
+}
+
+#hi2p4{
+    grid-area: hi2p4;
+}
+
+#hi3p4{
+    grid-area: hi3p4;
+}
+
+#hi4p4{
+    grid-area: hi4p4;
+}
+
+#hi5p4{
+    grid-area: hi5p4;
+}
+#hi6p4{
+    grid-area: hi6p4;
+}
+
+/* hero descriptions */
+
+#hd1p4, #hd2p4, #hd3p4, #hd4p4, #hd5p4, #hd6p4{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;   
+}
+
+.herotext{
+    margin-top: 1vh;
+    font-size: 1.6vh;
+    width: 96%;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+#hd1p4{
+    grid-area: hd1p4;
+}
+#hd2p4{
+    grid-area: hd2p4;
+}
+#hd3p4{
+    grid-area: hd3p4;
+}
+#hd4p4{
+    grid-area: hd4p4;
+}
+#hd5p4{
+    grid-area: hd5p4;
+}
+#hd6p4{
+    grid-area: hd6p4;
+}
+
+/* "notable avengers" section END */
