@@ -23,6 +23,8 @@ app.get('/', function(request, response) {
 //-------------------------------------------------------------//
 //------------------------ MARVEL API -------------------------//
 //-------------------------------------------------------------//
+
+//below code is supposed to initialize marvel API and access api keys from the ENV file
 //source for following 5 lines of code: https://www.npmjs.com/package/marvel-api
 var api = require('marvel-api');
  
@@ -30,6 +32,7 @@ var marvel = api.createClient({
   publicKey: 'my-public-key', 
   privateKey: 'my-private-key'
 });
+
 
 
 
