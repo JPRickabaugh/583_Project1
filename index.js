@@ -1,4 +1,4 @@
-// index.js - lines 4-18 and "WEB SERVER" section taken from glitch spotify project
+// index.js - lines 4-21 and "WEB SERVER" section taken from glitch spotify project/office hours with you
 // where your node app starts
 
 /* Global ScrollMagic, Linear */
