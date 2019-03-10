@@ -33,7 +33,13 @@ var marvel = api.createClient({
   privateKey: 'my-private-key'
 });
 
-
+//this is supposed to console log all the series that come up named Avengers. From there, my plan was to store the # of issues in each series in their own variables, or an array, and then push that to the chart. Unfortunately, I can't get the API to work in the first place due to the strange command line errors that show up whenever I run the app with node. Because of this, I've just manually found the info and plugged it into the chart in scripts.js for the time being - I want to figure out what's wrong with this eventually but I will likely need to come into office hours or collaborate with other classmates to do so.
+marvel.series.findByTitle('Avengers')
+  .then(function(res) {
+    console.log('success', res.data); 
+  })
+  .fail(console.error)
+  .done(); 
 
 
 //-------------------------------------------------------------//

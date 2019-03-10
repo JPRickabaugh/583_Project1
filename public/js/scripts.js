@@ -50,6 +50,9 @@ $(function () { // wait for document ready
                 }]
             },
             options: {
+                legend: {
+                    display: false
+                    },
                 scales: {
                     yAxes: [{
                         ticks: {
