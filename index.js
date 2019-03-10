@@ -1,4 +1,4 @@
-// server.js
+// index.js - lines 4-18 and "WEB SERVER" section taken from glitch spotify project
 // where your node app starts
 
 /* Global ScrollMagic, Linear */
@@ -14,7 +14,7 @@ app.use(express.static('public'));
 
 // http://expressjs.com/en/starter/basic-routing.html
 app.get("/", function (request, response) {
-  response.send('Hello' + process.env.SECRET);
+  response.send('Hello' + process.env.APIKEY);
 });
 
 

@@ -1,6 +1,6 @@
 //code below based on sample code from scrollmagic site
 $(function () { // wait for document ready
-    //init
+        //init
         var controller = new ScrollMagic.Controller({
             globalSceneOptions: {
                 triggerHook: 'onLeave'
@@ -18,4 +18,5 @@ $(function () { // wait for document ready
             .setPin(slides[i])
             .addTo(controller);
         }
-    }); 
+
+}); 
