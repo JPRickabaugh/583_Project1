@@ -283,14 +283,8 @@ path {
     margin-right: auto;
     height: 36vh;
     margin-top: 1vh;
-    filter: grayscale(100%);
-    transition: .75s;    
 }
 
-.heroimg:hover{
-    filter: grayscale(0%);
-    transition: .75s;
-}
 
 #hi1p4{
     grid-area: hi1p4;
